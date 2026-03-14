@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #F5EEDD;
+}
+
+.color {
+  color:
+    #F5EEDD #7AE2CF #077A7D #06202B
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(cyan, #06202B, #F5EEDD);
+  color: white;
+}
+
+header img {
+  width: 300px;
+  margin: 0px;
+}
+
+.header {
+  color: #F6D695;
+}
+
+a {
+  color: #F6D695;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 50px;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #06202B;
+  color: white;
+}
