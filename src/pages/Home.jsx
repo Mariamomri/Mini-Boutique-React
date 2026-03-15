@@ -10,9 +10,9 @@ function Home(){
   
   const products = [
     { img: img1, name: "Rolex Submariner", price: 9500 },
-    { img: img2, name: "Casio G-Shock", price: 120},
+    { img: img2, name: "Casio G-Shock ", price: 120},
     { img: img3, name: "Omega Speedmaster", price: 6200 },
-    { img: img4, name: "Seiko Presage", price: 450}
+    { img: img4, name: "Seiko Presage ", price: 450}
   ];
 
   return(

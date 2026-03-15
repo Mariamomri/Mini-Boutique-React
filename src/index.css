@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'greatvibes';
+  src: url(assets/fonts/GreatVibes.ttf);
+}
+
 * {
   margin: 0px;
 }
@@ -17,13 +22,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(cyan, #06202B, #F5EEDD);
+  background-image: linear-gradient(#883823, black, black, #F5EEDD);
   color: white;
+
 }
 
 .logo {
   width: 300px;
   margin: 0px;
+  margin-left: 100px;
 }
 
 .header {
@@ -39,30 +46,46 @@ a {
   margin: 50px;
 }
 
+a:hover {
+  border-bottom: 10px solid #F6D695;
+  border-top: 5px solid #F6D695;
+}
+
+a:focus {
+  text-decoration: underline;
+  padding: 1rem;
+}
+
 /*main home*/
 
 h1 {
   text-align: center;
-  color: #F6D695;
-  background-color: black;
+  color: black;
+  font-family: 'greatvibes';
   padding: 1rem;
+  font-size: 4rem;
+  margin: 20px;
+  font-weight: lighter;
 }
 
 .slide {
-  width: 100%;
-  height: 800px;
   margin-top: 30px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /* evita deformazioni */
+
 }
 
 .card {
-  background-image: radial-gradient(#F5EEDD, #077A7D, #06202B, cyan);
+  background-image: radial-gradient(#F5EEDD, white, white, #DE9F76);
   width: 300px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   color: white;
   overflow: hidden;
   border-top-right-radius: 20%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 20%;
+
 }
 
 .card h3 {
@@ -83,8 +106,8 @@ h1 {
 
 .textCard {
   text-align: center;
-  padding: 2.5rem;
-  background-color: #01A0A5;
+  padding: 4rem;
+  background-image: linear-gradient(black, #883823, black);
 }
 
 
@@ -118,7 +141,18 @@ h1 {
   margin: 50px;
   background-color: #ece0c6;
   padding: 50px;
-  border-radius: 20px;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.text {
+  font-family: 'greatvibes';
+  text-align: center;
+  margin: 100px;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+
 }
 
 /* footer */
@@ -126,6 +160,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #06202B;
+  background-color: #883823;
   color: #E4C88E;
+  border-top: 5px solid black
 }
