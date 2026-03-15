@@ -4,7 +4,7 @@
 
 import ProductCard from "./ProductCard";
 
-function ProductListe(products) {
+function ProductListe({ products }) {
   return (
     <div>
       {" "}
