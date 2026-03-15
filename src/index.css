@@ -167,4 +167,27 @@ footer {
 
 footer p {
   margin-right: 50px;
+  font-size: 1.2rem;
+}
+
+footer .logo {
+  margin-left: 20px;
+}
+
+.iconf {
+  display: flex;
+  gap: 50px;
+  font-size: 1.5rem;
+}
+
+.divIcon {
+  padding: 10px;
+}
+
+.divIcon:hover {
+  border: 1px solid;
+  border-radius: 50px;
+  background-color: #E4C88E;
+  color: #883823;
+  cursor: pointer;
 }
