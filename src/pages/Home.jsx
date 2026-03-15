@@ -7,7 +7,7 @@ import ProductListe from '../components/ProductListe.jsx'
 
 function Home(){
 
-
+  
   const products = [
     { img: img1, name: "Rolex Submariner", price: 9500 },
     { img: img2, name: "Casio G-Shock", price: 120},

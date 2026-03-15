@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Home from '../pages/Home'
 import Footer from '../components/Footer'
+import slide from '../assets/Mecha_White_D_prob4.mp4'
 
 function Layout() { 
     return ( 
@@ -9,7 +10,16 @@ function Layout() {
         <Header/>
 
 
-          <h1>Ma Boutique</h1>
+          <h1>La Boutique D'Horologerie</h1>
+          <video 
+                src={slide} 
+                className="slide" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              />
+
 
         <Home/>
 

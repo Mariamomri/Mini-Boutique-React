@@ -6,10 +6,8 @@ function Header() {
     <header>
 
       <div>
-        <img src={logo} alt="logo" /> 
+        <img src={logo} alt="logo" className='logo'/> 
       </div>
-
-      <h2 class="header">La Boutique D'Horologerie </h2>
 
       <nav>
 
