@@ -5,7 +5,7 @@ function Home(){
 
 
   const products = [
-    { img: img1, name: "Rolex Submariner", price: 9500, button: "Rolex" },
+    { img: img1, name: "Rolex Submariner", price: 9500 },
 
   ];
 
