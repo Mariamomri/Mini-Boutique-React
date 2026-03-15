@@ -38,6 +38,7 @@ function Layout() {
 
         
         <Footer/> 
+        <script></script>
       </div>
     );
 }

@@ -158,9 +158,13 @@ h1 {
 /* footer */
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #883823;
   color: #E4C88E;
   border-top: 5px solid black
+}
+
+footer p {
+  margin-right: 50px;
 }
