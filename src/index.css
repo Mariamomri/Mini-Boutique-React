@@ -41,9 +41,7 @@ a {
 
 /*main home*/
 .card {
-  background-image: radial-gradient(#F5EEDD, #077A7D, #06202B, #F6D695);
-  /* background: #06202B; */
-  border: 1px solid #F6D695;
+  background-image: radial-gradient(#F5EEDD, #077A7D, #06202B, cyan);
   width: 400px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   color: white;
@@ -98,6 +96,16 @@ a {
   background: #eab308;
   box-shadow: 0 8px 18px rgba(250, 204, 21, 0.35);
   transform: translateY(-1px);
+}
+
+.listCard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px;
+  background-color: #ece0c6;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 /* footer */
