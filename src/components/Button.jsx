@@ -2,7 +2,9 @@
 
 
 function Button({ label, onClick }) { 
-  return ( <button onClick={onClick}> {label} </button> 
+  return ( 
+  
+  <button onClick={onClick}> {label} </button> 
 
     // useState(){
     //   // qui fare in modo che faccia piu 1

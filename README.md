@@ -1,16 +1,53 @@
-# React + Vite
+Exercice : Mini Boutique React Thème libre (Props + Composants + Children + Composition)
+Objectif
+Créer une mini-boutique fonctionnelle en React en utilisant uniquement :
+les props
+la déstructuration
+les children
+la composition de composants
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Consignes
+Créer le composant Layout
+Contient un header et un footer.
+Affiche tout ce qui est passé entre ses balises via children au milieu.
+Exemple d’utilisation :
+<Layout>
 
-Currently, two official plugins are available:
+  <h1>Ma boutique</h1>
+</Layout>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Créer le composant ProductList
+Reçoit un tableau de produits via props (products).
+Affiche plusieurs ProductCard en utilisant products.map(...)
 
-## React Compiler
+Créer le composant ProductCard
+Reçoit un produit via props (product).
+Affiche :
+le nom du produit
+le prix
+un bouton "Acheter"
+Optionnel : encadrer le contenu avec le composant Card.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Créer le composant Button
+Reçoit label via props.
+Affiche simplement un <button> avec ce texte.
+C’est un composant gnérique (il ne connaît pas le produit).
 
-## Expanding the ESLint configuration
+Créer le composant Card
+Reçoit children.
+Sert à encadrer le contenu avec un style (bordure, padding, etc.).
+Exemple d’utilisation :
+<Card>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  <h3>Nom du produit</h3>
+  <p>Prix : 49 €</p>
+  <Button label="Acheter" />
+</Card>
+Données à utiliser
+Dans App.jsx, créer un tableau
+
+Bonus : Ajouter un compteur d’achats avec useState
+Objectif
+Chaque produit a un bouton “Acheter”.
+Quand on clique dessus, un compteur de produits achetés augmente.
+Cela montre l’utilisation de state dans React.

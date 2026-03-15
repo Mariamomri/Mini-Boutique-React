@@ -1,6 +1,8 @@
+// questo è il costruttore dei dati della carta che si mostrano nel navigatore. in poche parole dicono childe
 import Card from '../components/Card'
 
 function ProductCard({ product }) { 
+
   return ( 
   <div> 
     <h3>{product.name}</h3> 
