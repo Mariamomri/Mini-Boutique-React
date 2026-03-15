@@ -7,9 +7,11 @@ function ProductCard({ product }) {
   return ( 
   <Card> 
     <img src={product.img} alt={product.name} />
-    <h3>{product.name}</h3> 
-    <p className="price">{product.price} €</p> 
-    <Button label="Acheter"/> 
+    <div className='textCard'>
+      <h3>{product.name}</h3> 
+      <p className="price">{product.price} €</p> 
+      <Button label="Acheter"/>
+    </div> 
   </Card> 
   ); 
 } export default ProductCard;

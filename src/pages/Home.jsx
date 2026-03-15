@@ -1,4 +1,4 @@
-import img1 from '../assets/Untitled.jpeg'
+import img1 from '../assets/Rolex Transparent I5m.png'
 import ProductListe from '../components/ProductListe.jsx'
 
 function Home(){
