@@ -146,6 +146,21 @@ h1 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
+.items {
+  margin-right: 20px;
+  margin-top: -980px;
+  /* alza l’elemento */
+  text-align: center;
+  color: #F6D695;
+  font-size: 1.1rem;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  float: right;
+}
+
+
+
 .text {
   font-family: 'greatvibes';
   text-align: center;

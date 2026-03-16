@@ -10,7 +10,7 @@ function Layout() {
         <Header/>
 
 
-          <h1>La Boutique D'Horologerie</h1>
+          <h1>La Boutique D'Horlogerie</h1>
 
             <Home/>
 

@@ -2,7 +2,7 @@
 import Card from './Card'
 import Button from "./Button";
 
-function ProductCard({ product }) { 
+function ProductCard({ product,onBuy }) { 
 
   return ( 
   <Card> 
@@ -10,7 +10,7 @@ function ProductCard({ product }) {
     <div className='textCard'>
       <h3>{product.name}</h3> 
       <p className="price">{product.price} €</p> 
-      <Button label="Acheter"/>
+      <Button label="Acheter" onClick={onBuy}/>
     </div> 
   </Card> 
   ); 

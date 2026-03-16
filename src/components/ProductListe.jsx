@@ -4,12 +4,14 @@
 
 import ProductCard from "./ProductCard";
 
-function ProductListe({ products }) {
+function ProductListe({ products, onBuy }) {
   return (
     <div className='listCard'>
       {" "}
       {products.map((p) => (
-        <ProductCard key={p.id} product={p} />
+        <ProductCard key={p.id} product={p} 
+        onBuy={() => onBuy(p.id)}
+        />
       ))}
     </div>
   );

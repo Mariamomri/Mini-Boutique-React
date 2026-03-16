@@ -2,6 +2,7 @@ import img1 from '../assets/Rolex Transparent I5m.png'
 import img2 from '../assets/Casio G-Shock senza .png'
 import img3 from '../assets/Omega orologio senza.png'
 import img4 from '../assets/Seiko orologio senza.png'
+import { useState } from "react";
 
 import ProductListe from '../components/ProductListe.jsx'
 
@@ -15,11 +16,21 @@ function Home(){
     { img: img4, name: "Seiko Presage ", price: 450}
   ];
 
+
+  const [count, setCount] = useState(0);
+
+  function handleBuy() {
+    setCount(prev => prev + 1);
+  }
+
   return(
 
   <>
+  
 
-    <ProductListe products={products} />
+    <ProductListe products={products} onBuy={handleBuy}/>
+
+    <p className='items'>Items: <strong>{count}</strong></p>
   </>
   );
 }
