@@ -1,9 +1,16 @@
 import Header from '../components/Header'
-import Home from '../pages/Home'
 import Footer from '../components/Footer'
 import slide from '../assets/Mecha_White_D_prob4.mp4'
+import { useState } from "react";
+import ProductListe from './ProductListe.jsx'
 
-function Layout() { 
+function Layout({ products }) { 
+
+    const [count, setCount] = useState(0);
+  
+    function handleBuy() {
+      setCount(prev => prev + 1);
+    }
     return ( 
 
       <div className="layout"> 
@@ -12,7 +19,7 @@ function Layout() {
 
           <h1>La Boutique D'Horlogerie</h1>
 
-            <Home/>
+            <ProductListe products={products} onBuy={handleBuy}/>
 
           <div className='text'>
             <h2>“Découvrez l’art du temps.”</h2>
@@ -24,6 +31,8 @@ function Layout() {
 
               <h2>““””</h2>
           </div>
+
+              <p className='items'>Items: <strong>{count}</strong></p>
           <video 
                 src={slide} 
                 className="slide" 
@@ -33,10 +42,6 @@ function Layout() {
                 playsInline
               />
 
-
-      
-
-        
         <Footer/> 
         <script></script>
       </div>
@@ -45,6 +50,4 @@ function Layout() {
   
 
 export default Layout;
-
-
 
